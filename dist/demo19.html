@@ -36,7 +36,6 @@
               class="d-flex flex-row w-100 justify-content-between align-items-center d-lg-none"
             >
               <div class="navbar-brand">
-                <a href="./demo19.html">
                   <img
                     class="logo-dark"
                     src="./assets/img/undikita-logo2-dark.png"
@@ -49,7 +48,6 @@
                     srcset="./assets/img/undikita-logo2-light.png 2x"
                     alt=""
                   />
-                </a>
               </div>
               <div class="navbar-other ms-auto">
                 <ul
@@ -78,19 +76,18 @@
               <div class="navbar-collapse offcanvas-nav">
                 <div
                   class="offcanvas-header mx-lg-auto order-0 order-lg-1 d-lg-flex px-lg-15"
-                >
-                  <a href="./demo19.html"
+                
                     ><img
                       class="logo-dark"
                       src="./assets/img/undikita-logo2-dark.png"
-                      srcset="./assets/img/logo-dark@2x.png 2x"
+                      srcset="./assets/img/undikita-logo2-dark.png 2x"
                       alt="" />
                     <img
                       class="logo-light"
                       src="./assets/img/undikita-logo2-light.png"
                       srcset="./assets/img/undikita-logo2-light.png"
                       alt=""
-                  /></a>
+                  />
                   <button
                     type="button"
                     class="btn-close btn-close-white offcanvas-close offcanvas-nav-close d-md-none"
@@ -99,15 +96,6 @@
                 </div>
                 <div class="w-100 order-1 order-lg-0 d-lg-flex">
                   <ul class="navbar-nav ms-lg-auto"></ul>
-                  <!-- /.navbar-nav -->
-                </div>
-                <div class="w-100 order-3 order-lg-2 d-lg-flex">
-                  <ul class="navbar-nav me-lg-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="./docs/index.html">About Us</a>
-                      <!--/.dropdown-menu -->
-                    </li>
-                  </ul>
                   <!-- /.navbar-nav -->
                 </div>
               </div>
@@ -153,7 +141,7 @@
                       />
                       <label for="nric">Enter NRIC (without dash '-')</label>
                     </div>
-                    <select id="candidates-list">
+                    <select id="candidates-list" class="rounded m-4 p-1">
 
                     </select>
                   </div>
@@ -188,6 +176,79 @@
         </div>
       </section>
     </div>
+    
+    <section class="wrapper bg-light">
+      <div class="container py-14 py-md-16">
+        <div class="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
+          <div class="col-md-8 col-lg-6 col-xl-5 order-lg-2 position-relative">
+            <div
+              class="shape bg-soft-primary rounded-circle rellax w-20 h-20"
+              data-rellax-speed="1"
+              style="top: -2rem; right: -1.9rem"
+            ></div>
+            <figure class="rounded">
+              <img
+                src="./assets/img/photos/about.jpg"
+                srcset="./assets/img/photos/about.jpg 2x"
+                alt=""
+              />
+            </figure>
+          </div>
+          <!--/column -->
+          <div class="col-lg-6">
+            <h2 class="display-4 mb-3">Who Are We?</h2>
+            <p class="lead fs-lg">
+              We firmly believe that blockchain is the key to the next advancement in election systems
+            </p>
+            <p class="mb-6">
+              Just like Steve Jobs believed in the Internet, we believed in the rising technology that is Blockchain. As the authors of the book [Blockchain and the Law] stated, "A general-purpose tool for creating secure, decentralized, peer-to-peer applications, blockchain technology has been compared to the Internet itself in both form and impact."
+            </p>
+            <div class="row gx-xl-10 gy-6">
+              <div class="col-md-6">
+                <div class="d-flex flex-row">
+                  <div>
+                    <img
+                      src="./assets/img/icons/lineal/target.svg"
+                      class="svg-inject icon-svg icon-svg-sm me-4"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Our Mission</h4>
+                    <p class="mb-0">
+                      To make election fair and square with the right technology.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--/column -->
+              <div class="col-md-6">
+                <div class="d-flex flex-row">
+                  <div>
+                    <img
+                      src="./assets/img/icons/lineal/award-2.svg"
+                      class="svg-inject icon-svg icon-svg-sm me-4"
+                      alt=""
+                    />
+                  </div>
+                  <div>
+                    <h4 class="mb-1">Our Values</h4>
+                    <p class="mb-0">
+                      Unified and tamper-proof system for greater transparency in democracy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--/column -->
+            </div>
+            <!--/.row -->
+          </div>
+          <!--/column -->
+        </div>
+        <!--/.row -->
+      </div>
+      <!-- /.container -->
+    </section>
     <!-- /.content-wrapper -->
     <footer class="bg-light pt-10">
       <div class="container pb-13 pb-md-15">
@@ -198,7 +259,7 @@
               <img
                 class="mb-4"
                 src="./assets/img/logo.png"
-                srcset="./assets/img/logo-dark@2x.png 2x"
+                srcset="./assets/img/logo.png 2x"
                 alt=""
               />
               <p class="mb-4">
