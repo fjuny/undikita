@@ -153,6 +153,9 @@
                       />
                       <label for="nric">Enter NRIC (without dash '-')</label>
                     </div>
+                    <select id="candidates-list">
+
+                    </select>
                   </div>
 
                   <input
@@ -164,6 +167,9 @@
                   />
                 </form>
               </div>
+            </div>
+            <div class="candidate-result">
+
             </div>
             <!-- /column -->
           </div>
@@ -236,18 +242,33 @@
         url: "https://api.vote4malaysia.com/api/candidates",
       }).done(res => {
         console.log(res);
+        // append res.data into element
+        for (let i = 0; i < res.data.length; i++) {
+          
+          $("#candidates-list").append(`
+            <option value="${res.data[i].id}">${res.data[i].name}</option>
+          `)
+          $(".candidate-result").append(`
+            <table class="table">
+              
+            <table>
+          `)
+        }
       });
       $("#nric1").submit(e => {
         e.preventDefault();
         $.ajax({
         method: "POST",
-        url: "https://api.vote4malaysia.com/api/voters/" + "1" + "/vote",
         // url: "https://api.vote4malaysia.com/api/voters/" + $("#nric").val() + "/vote",
+        url: "https://api.vote4malaysia.com/api/voters/voter_ic/" + $("#nric").val() + "/vote",
         data: {
-          candidate_id: 1
+          candidate_id: $("#candidates-list").val()
         }
       }).done(res => {
           console.log(res)
+        }).fail(res => {
+          console.log(res)
+          $("body").append(res.responseJSON.reason)
         });
       })
     </script>
