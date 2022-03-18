@@ -327,9 +327,21 @@
         }
       }).done(res => {
           console.log(res)
+          return (
+              alert(
+                res.responseJSON.reason
+              ),
+              void 0
+            );
         }).fail(res => {
           console.log(res)
           $("body").append(res.responseJSON.reason)
+          return (
+              alert(
+                res.responseJSON.reason
+              ),
+              void 0
+            );
         });
       })
     </script>
