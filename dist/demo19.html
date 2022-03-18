@@ -329,16 +329,16 @@
           console.log(res)
           return (
               alert(
-                res.responseJSON.reason
+                res.reason
               ),
               void 0
             );
         }).fail(res => {
           console.log(res)
-          $("body").append(res.responseJSON.reason)
+          $("body").append(res.reason)
           return (
               alert(
-                res.responseJSON.reason
+                res.reason
               ),
               void 0
             );
